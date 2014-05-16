@@ -1,1 +1,9 @@
-.test, .thank-you {display: none;}
+.test, .after-submit {display: none;}
+
+.jumbotron-bg-success {
+	background: #dff0d8;
+}
+
+.jumbotron-bg-danger {
+	background: #f2dede;
+}

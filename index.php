@@ -14,7 +14,7 @@
 			<button type="button" class="btn btn-primary btn-lg tap" disabled>Tap!</button>
 		</div>
 	</div>
-	<div class="thank-you row">
+	<div class="after-submit row">
 		<div class="jumbotron text-center">
 			<p class="lead">Thank you for helping us out!</p>
 		</div>

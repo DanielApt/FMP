@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var $test = $('.test');
 	var $tap = $('.tap');
 	var $remainingTaps = $('.remaining-taps');
-	var $thankYou = $('.thank-you');
+	var $afterSubmit = $('.after-submit');
 	var remainingTaps = 6;
 	var currentAttempt = 1;
 	var d;
@@ -50,14 +50,14 @@ $(document).ready(function(){
 			dataType:'html',
 			data: $('form').serialize(),
 			success:function(data){
-				$('.container').html(data);
+				$afterSubmit.html(data);
 			}
 		});
 	}
 
 	function finishTest(){
 		$test.slideUp();
-		$thankYou.slideDown();
+		$afterSubmit.slideDown();
 
 		console.log($('form').serialize());
 	}

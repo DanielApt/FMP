@@ -34,6 +34,7 @@ $(document).ready(function(){
 
 		if(remainingTaps===0){
 			finishTest();
+			submitTest();
 		}
 
 		//display the new count
@@ -41,6 +42,18 @@ $(document).ready(function(){
 
 		currentAttempt++;
 	});
+
+	function submitTest(){
+		$.ajax({
+			url:'form.php',
+			type:'post',
+			dataType:'html',
+			data: $('form').serialize(),
+			success:function(data){
+				$('.container').html(data);
+			}
+		});
+	}
 
 	function finishTest(){
 		$test.slideUp();

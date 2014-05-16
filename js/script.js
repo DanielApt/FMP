@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var $remainingTaps = $('.remaining-taps');
 	var $thankYou = $('.thank-you');
 	var remainingTaps = 6;
+	var currentAttempt = 1;
 	var d;
 	var loggedTimes = [];//it will be [startTime, attempt1, attempt2, attempt3, attempt4, attempt5, attemp6]
 
@@ -29,6 +30,8 @@ $(document).ready(function(){
 		d = new Date();
 		loggedTimes.push(d.getTime());
 
+		$('#attempt-' + currentAttempt).val(d.getTime());
+
 		if(remainingTaps===0){
 			finishTest();
 		}
@@ -36,14 +39,13 @@ $(document).ready(function(){
 		//display the new count
 		$remainingTaps.text(remainingTaps);
 
-		//log the current time
-		console.log(d.getTime());
+		currentAttempt++;
 	});
 
 	function finishTest(){
 		$test.slideUp();
 		$thankYou.slideDown();
 
-		console.log(loggedTimes);
+		console.log($('form').serialize());
 	}
 });

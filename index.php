@@ -20,4 +20,13 @@
 		</div>
 	</div>
 
+	<form class="hidden">
+		<input type="hidden" id="attempt-1" name="attempt-1"/>
+		<input type="hidden" id="attempt-2" name="attempt-2"/>
+		<input type="hidden" id="attempt-3" name="attempt-3"/>
+		<input type="hidden" id="attempt-4" name="attempt-4"/>
+		<input type="hidden" id="attempt-5" name="attempt-5"/>
+		<input type="hidden" id="attempt-6" name="attempt-6"/>
+	</form>
+
 <?php require 'templates/footer.php';?>

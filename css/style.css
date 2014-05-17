@@ -7,3 +7,8 @@
 .jumbotron-bg-danger {
 	background: #f2dede;
 }
+
+#footer {
+	position: absolute;
+	bottom: 15px;
+}

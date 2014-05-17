@@ -49,14 +49,12 @@ $(document).ready(function(){
 			data: $('form').serialize(),
 			success:function(data){
 				$afterSubmit.html(data);
+				$afterSubmit.slideDown();
 			}
 		});
 	}
 
 	function finishTest(){
 		$test.slideUp();
-		$afterSubmit.slideDown();
-
-		console.log($('form').serialize());
 	}
 });

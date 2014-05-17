@@ -9,12 +9,12 @@ if(
 	isset($_POST['attempt-6'])
 ){
 	//store our variables
-	$attempt1 = intval(mysql_real_escape_string($_POST['attempt-1'])) - intval(mysql_real_escape_string($_POST['starting-time']));
-	$attempt2 = intval(mysql_real_escape_string($_POST['attempt-2'])) - intval(mysql_real_escape_string($_POST['attempt-1']));
-	$attempt3 = intval(mysql_real_escape_string($_POST['attempt-3'])) - intval(mysql_real_escape_string($_POST['attempt-2']));
-	$attempt4 = intval(mysql_real_escape_string($_POST['attempt-4'])) - intval(mysql_real_escape_string($_POST['attempt-3']));
-	$attempt5 = intval(mysql_real_escape_string($_POST['attempt-5'])) - intval(mysql_real_escape_string($_POST['attempt-4']));
-	$attempt6 = intval(mysql_real_escape_string($_POST['attempt-6'])) - intval(mysql_real_escape_string($_POST['attempt-5']));
+	$attempt1 = intval($_POST['attempt-1']) - intval($_POST['starting-time']);
+	$attempt2 = intval($_POST['attempt-2']) - intval($_POST['attempt-1']);
+	$attempt3 = intval($_POST['attempt-3']) - intval($_POST['attempt-2']);
+	$attempt4 = intval($_POST['attempt-4']) - intval($_POST['attempt-3']);
+	$attempt5 = intval($_POST['attempt-5']) - intval($_POST['attempt-4']);
+	$attempt6 = intval($_POST['attempt-6']) - intval($_POST['attempt-5']);
 
 
 	//let's try connecting

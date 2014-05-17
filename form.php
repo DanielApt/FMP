@@ -16,6 +16,8 @@ if(
 	$attempt5 = intval(mysql_real_escape_string($_POST['attempt-5'])) - intval(mysql_real_escape_string($_POST['attempt-4']));
 	$attempt6 = intval(mysql_real_escape_string($_POST['attempt-6'])) - intval(mysql_real_escape_string($_POST['attempt-5']));
 
+	die("<h1>$attempt1</h1>");
+
 
 	//let's try connecting
 	include_once('db_login_details.php');

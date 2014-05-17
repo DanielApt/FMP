@@ -19,6 +19,11 @@
 			<p class="lead">Thank you for helping us out!</p>
 		</div>
 	</div>
+	<div class="error-submit row">
+		<div class="jumbotron text-center">
+			<p class="lead">Uh-oh, something went wrong. Why don't you <a href="">try again?</a></p>
+		</div>
+	</div>
 
 	<form class="hidden">
 		<input type="hidden" id="starting-time" name="starting-time">

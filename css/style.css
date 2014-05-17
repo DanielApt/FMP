@@ -1,4 +1,4 @@
-.test, .after-submit {display: none;}
+.test, .after-submit, .error-submit {display: none;}
 
 .jumbotron-bg-success {
 	background: #dff0d8;

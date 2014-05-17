@@ -31,13 +31,13 @@ if(
 	mysqli_close($con);
 
 	echo <<<HERE
-	<div class="jumbotron jumbotron-bg-success">
+	<div class="jumbotron text-center jumbotron-bg-success">
 		<p class="lead">Thank you for your submission!</p>
 	</div>
 HERE;
 }else{
 	echo <<<HERE
-	<div class="jumbotron jumbotron-bg-danger">
+	<div class="jumbotron text-center jumbotron-bg-danger">
 		<p class="lead">Do not access this page directly!</p>
 	</div>
 HERE;
@@ -45,7 +45,7 @@ HERE;
 
 function echoError(){
 	echo <<<HERE
-	<div class="jumbotron jumbotron-bg-danger">
+	<div class="jumbotron text-center jumbotron-bg-danger">
 		<p class="lead">Uh-oh! Something has gone wrong when submitting your results.</p>
 		<p>Why not <a href="">try again?</a>
 	</div>

@@ -14,5 +14,5 @@
 <body>
 	<div class="container">
 		<div class="page-header">
-			<h1>Time Perception <small>Help us out by participating in our test</small></h1>
+			<h1><a href="">Time Perception</a> <small>Help us out by participating in our test</small></h1>
 		</div>

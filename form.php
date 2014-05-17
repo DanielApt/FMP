@@ -1,5 +1,6 @@
 <?php
 if(
+	isset($_POST['starting-time']) &&
 	isset($_POST['attempt-1']) &&
 	isset($_POST['attempt-2']) &&
 	isset($_POST['attempt-3']) &&
@@ -8,7 +9,7 @@ if(
 	isset($_POST['attempt-6'])
 ){
 	//store our variables
-	$attempt1 = intval(mysql_real_escape_string($_POST['attempt-1']));
+	$attempt1 = intval(mysql_real_escape_string($_POST['attempt-1'])) - intval(mysql_real_escape_string($_POST['starting-time']));
 	$attempt2 = intval(mysql_real_escape_string($_POST['attempt-2'])) - intval(mysql_real_escape_string($_POST['attempt-1']));
 	$attempt3 = intval(mysql_real_escape_string($_POST['attempt-3'])) - intval(mysql_real_escape_string($_POST['attempt-2']));
 	$attempt4 = intval(mysql_real_escape_string($_POST['attempt-4'])) - intval(mysql_real_escape_string($_POST['attempt-3']));

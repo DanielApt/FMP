@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$(this).animate({'width':0, 'padding':0}, function(){$(this).hide();});
 
 		d = new Date();
-		loggedTimes.push(d.getTime());
+		$('#starting-time').val(d.getTime());
 
 		$tap.removeAttr('disabled');
 	});

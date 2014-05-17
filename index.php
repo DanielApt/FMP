@@ -21,6 +21,7 @@
 	</div>
 
 	<form class="hidden">
+		<input type="hidden" id="starting-time" name="starting-time">
 		<input type="hidden" id="attempt-1" name="attempt-1"/>
 		<input type="hidden" id="attempt-2" name="attempt-2"/>
 		<input type="hidden" id="attempt-3" name="attempt-3"/>

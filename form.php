@@ -16,6 +16,14 @@ if(
 	$attempt5 = intval($_POST['attempt-5']) - intval($_POST['attempt-4']);
 	$attempt6 = intval($_POST['attempt-6']) - intval($_POST['attempt-5']);
 
+	//calculate the accuracy
+	$accuracy = ($attempt1 + $attempt2 + $attempt3 + $attempt4 + $attempt5 + $attempt6) / 120000;
+	if($accuracy > 1){
+		$accuracy = 2 - $accuracy;
+	}
+
+	$accuracy *= 100;
+	$accuracy = round($accuracy);
 
 	//let's try connecting
 	include_once('db_login_details.php');
@@ -35,6 +43,7 @@ if(
 	echo <<<HERE
 	<div class="jumbotron text-center jumbotron-bg-success">
 		<p class="lead">Thank you for your submission!</p>
+		<p>You were <strong>$accuracy%</strong> accurate!</p>
 
 		<div class="row">
 			<div class="col-sm-2 col-sm-offset-4 col-md-1 col-md-offset-5">

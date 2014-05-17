@@ -18,7 +18,9 @@ if(
 
 
 	//let's try connecting
-	$con = mysqli_connect('localhost', 'root', 'root', 'fmp_db');
+	include_once('db_login_details.php');
+
+	$con = mysqli_connect($server, $user, $password, $db) or die('Failed connection: ' . mysqli_error());
 
 	// Check connection
 	if (mysqli_connect_errno()) {

@@ -35,8 +35,28 @@ if(
 	echo <<<HERE
 	<div class="jumbotron text-center jumbotron-bg-success">
 		<p class="lead">Thank you for your submission!</p>
+
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-4 col-md-1 col-md-offset-5">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Help our design project and participate in this short test!" data-count="none" data-hashtags="timeperception">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+
+			<div class="col-sm-2 col-md-1">
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=416857841738808&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+				<div class="fb-share-button" data-href="https://iamapt.com/FMP" data-width="100" data-type="button"></div>
+			</div>
+		</div>
 	</div>
 HERE;
+	die();
 }else{
 	echo <<<HERE
 	<div class="jumbotron text-center jumbotron-bg-danger">

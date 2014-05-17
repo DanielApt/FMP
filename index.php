@@ -9,6 +9,7 @@
 	<div class="test row">
 		<div class="jumbotron text-center">
 			<p class="lead">Tap this window whenever you think 20 seconds has past.</p>
+			<p>Please don't use a phone, watch, or other time-telling devices.</p>
 			<p>Still <span class="remaining-taps">6</span> remaining.</p>
 			<button type="button" class="btn btn-default btn-lg start-test">Start</button>
 			<button type="button" class="btn btn-primary btn-lg tap" disabled>Tap!</button>

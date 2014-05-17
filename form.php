@@ -8,8 +8,6 @@ if(
 	isset($_POST['attempt-5']) &&
 	isset($_POST['attempt-6'])
 ){
-	die($_POST['starting-time']);
-
 	//store our variables
 	$attempt1 = intval(mysql_real_escape_string($_POST['attempt-1'])) - intval(mysql_real_escape_string($_POST['starting-time']));
 	$attempt2 = intval(mysql_real_escape_string($_POST['attempt-2'])) - intval(mysql_real_escape_string($_POST['attempt-1']));
@@ -18,6 +16,7 @@ if(
 	$attempt5 = intval(mysql_real_escape_string($_POST['attempt-5'])) - intval(mysql_real_escape_string($_POST['attempt-4']));
 	$attempt6 = intval(mysql_real_escape_string($_POST['attempt-6'])) - intval(mysql_real_escape_string($_POST['attempt-5']));
 
+	die($attempt3);
 
 	//let's try connecting
 	include_once('db_login_details.php');

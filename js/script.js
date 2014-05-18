@@ -8,6 +8,8 @@ $(document).ready(function(){
 	var currentAttempt = 1;
 	var d;
 
+	$tap.hide();
+
 	//events
 	$('.show-test').click(function(){
 		$intro.slideUp();
@@ -20,10 +22,12 @@ $(document).ready(function(){
 		d = new Date();
 		$('#starting-time').val(d.getTime());
 
-		$tap.removeAttr('disabled');
+		$(this).fadeOut();
+
+		$tap.fadeIn().removeAttr('disabled');
 	});
 
-	$('.tap').click(function(){
+	$tap.click(function(){
 		//reduce the remaining tap count
 		remainingTaps--;
 		d = new Date();

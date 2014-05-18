@@ -44,7 +44,7 @@ if(
 
 		<div class="row">
 			<div class="col-sm-2 col-sm-offset-4 col-md-1 col-md-offset-5">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Help our design project and participate in this short test!" data-count="none" data-hashtags="timeperception">Tweet</a>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Test your time perception. I was $accuracy% accurate!" data-count="none" data-hashtags="timeperception">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			</div>
 

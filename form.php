@@ -17,13 +17,10 @@ if(
 	$attempt6 = intval($_POST['attempt-6']) - intval($_POST['attempt-5']);
 
 	//calculate the accuracy
-	$accuracy = ($attempt1 + $attempt2 + $attempt3 + $attempt4 + $attempt5 + $attempt6) / 120000;
-	if($accuracy > 1){
-		$accuracy = 2 - $accuracy;
+	$accuracy = round((1 - abs(1 - ($attempt1 + $attempt2 + $attempt3 + $attempt4 + $attempt5 + $attempt6)/120000)) * 100);
+	if($accuracy < 0){
+		$accuracy = 0;
 	}
-
-	$accuracy *= 100;
-	$accuracy = round($accuracy);
 
 	//let's try connecting
 	include_once('db_login_details.php');
